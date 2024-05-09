@@ -1,0 +1,50 @@
+Les étapes de Training Power Query avec Benjamin Ejzenberg M
+MasterClass du Vendredi 8 mai 2024 18h
+
+Def Power query
+Permèt d'extraire, Traiter, charger (ETL Extraxt Transform Load) les données pour ensuite les visualiser
+
+Prenez en main Power Query (cours gratuit en direct)
+
+Maîtrisez l'automatisation dans Excel et Power BI avec des techniques modernes. 
+Une Masterclass gratuite pour propulser vos compétences
+
+1 - Pendant le live le lien d'accés au dossier zip : https://www.datacoach.c
+a/download/Data_Masterclass_PQ20240508.zip
+2 - cliquer sur Extraire pis Extraire tout
+3 - Le dossier qui s'ouvre contient les données excel pour le training
+ - click droit sur nom du dossier - copier l'adresse
+4 - Ouvrir Power BI Desktop (2e méthode passer par Excel)
+5 - cliquer rapport
+6 - cliquer "Obtenir les données"
+7 - cliquer "Dossier"
+8 - cliquer "se connecter"
+9- coller l'adresse (C:\Users\Martin\Documents\LearningPowerQuery\Data_Masterclass_PQ20240508)
+   puis cliquer OK
+10 - clicquer sous le tableau (tout les fichiers du dossierzip) qui s'ouvre "Transformer les données"
+11 - un tableau (comme excel s'ouvre ds Power BI Desktop)
+12 - Nombres de lignes et de colonnnes s'affichent en bas à gauche: 8Colonnes et 54 Lignes 
+13 - click droit sur la requête (ie nom du dossier) renommer All Data
+14 - click droit sur All Data - puis "Reference" cela crée All Data (2) qu'on pourra modifier
+     touten gardant All Data
+15 - renommer All Data 2 Client
+16 - la 1ere ligne avec client.xlsx représente mon fichier excel avec la liste desclients
+17 - se connecter au fichier des clients en cliqquant sur Binary (1ere cellule de la 1ere ligne)
+18 - clicquer Binary puis table cela ouvre la liste des clients (y compris nom pays etc)
+Noter que nous suivons ainsi la procedure d'automatisation qui facilitera lamise à jour rapide 
+dans le futur encas de besoin
+19 - cliquer en haut dans la barre des icones "utiliser la 1ereligne pour les entêtes cela corrige 
+automatiquement et remplace les entêtes pas correct column 1 column2 etc par les vraies
+20 - le nombre de clients: lire en bas à gauche 793 lignes correspond au nombre de clients
+21 - Trouver les ventes par clientà partir de All Data ou s'affichent les "Sales"(sont recues chaque matin).
+ les filtrer les combiner dans un tableau de manière à automatiser l'actualisation du tableau 
+ à chaque réception de nvelle donnèes ventes
+22 - click droit All Data puis Reference et renommer en Sales 
+23 - cliquer la flèche filtre de l'entête de la 2e colonne (Name) choisir "filtres textuels" -"contient- ecrire; Sales
+    puis OK - on obtient 48 Lignes (en bas à gauche)
+24 - chaque ligne correspond à ventes d'1 mois. on aimerait les combiner
+25 - cliquer les 2 petites flèches del'entête de la 1ere colonne puis click sur sheet1 comme 
+exple de tous mes fichiers. On dit ainsi à Power query de prendre pour exple ce fichier pour combiner
+chaque mois selon ce modèle de fichier - puis OK
+26 - un grand tableau de Sales s'affiche avec 999+ (y en plus tout ne peut pas s'afficher)
+ de ligneset 7 colonnes
